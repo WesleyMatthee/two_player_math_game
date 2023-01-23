@@ -15,16 +15,16 @@ class Players
   attr_accessor :lives, :name
 
   def initialize(name)
-    @name = 3
-    @lives = lives
+    @name = name
+    @lives = 3
   end
 
   def reduceLives
     @lives -= 1
   end
 
-  def alive?
-    @lives > 0
+  def isDead
+    @lives == 0
   end
 
 end

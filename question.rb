@@ -1,3 +1,5 @@
+require "./players"
+
 class Questions
   attr_accessor :answer, :number1, :number2
 
@@ -20,7 +22,7 @@ end
 def ask(player)
   puts "#{player.name} : What is #{@number1} + #{@number2}?"
 
-  @input_answer = $stdin.get.chomp.to_i
+  @input_answer = $stdin.gets.chomp.to_i
 
     check_answer(player)
   end

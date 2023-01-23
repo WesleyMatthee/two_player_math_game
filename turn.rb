@@ -1,2 +1,0 @@
-require "./players"
-require "./question"
